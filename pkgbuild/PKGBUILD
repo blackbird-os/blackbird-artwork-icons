@@ -1,0 +1,14 @@
+# $Id$
+# Maintainer: James Kittsmiller (AJSlye) <james@nulogicsystems.com>
+
+pkgname=blackbird-artwork-icons
+pkgver=1.0
+pkgrel=1
+pkgdesc="Official Blackbird OS icons"
+arch=('any')
+url='https://github.com/blackbird-os/blackbird-artwork-icons'
+license=('GPL')
+package() {
+  cd ../..
+  cp -aR usr $pkgdir/
+}
